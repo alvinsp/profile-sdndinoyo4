@@ -17,20 +17,19 @@
 
 
 <div class="untree_co-section">
-	<div class="container">
-		<div class="row">
-			<?php foreach ($eskul_model as $sem) : ?>
-				<div class="col-lg-4 col-md-6 col-sm-6 p-3">
-					<!-- class="category d-flex justify-content-center h-100" -->
-					<a class="category d-flex justify-content-center h-100" href="<?php echo base_url('ekstrakurikuler/detail/' . $sem->id_eskul, '') ?>">
-						<div class="text-center">
-							<img src="<?php echo base_url('assets/database/img/icon_eskul/' . $sem->icon_eskul) ?>" alt="futsal" width="50" height="50">
-							<h3 class="mt-3"><?php echo $sem->nama_eskul ?></h3>
-						</div>
-					</a>
-				</div>
-			<?php endforeach; ?>
 
-		</div>
+	<div class="row">
+		<?php foreach ($eskul_model as $sem) : ?>
+			<div class="col-lg-4 col-md-6 col-sm-6 p-3">
+				<!-- class="category d-flex justify-content-center h-100" -->
+				<a class="category d-flex justify-content-center h-100" href="<?php echo base_url('ekstrakurikuler/detail/' . $sem->id_eskul, '') ?>">
+					<div class="text-center">
+						<img src="<?php echo base_url('assets/database/img/icon_eskul/' . $sem->icon_eskul) ?>" alt="<?php echo $sem->nama_eskul ?>" width="50" height="50">
+						<h3 class="mt-3"><?php echo $sem->nama_eskul ?></h3>
+					</div>
+				</a>
+			</div>
+		<?php endforeach; ?>
+
 	</div>
 </div>

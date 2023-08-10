@@ -20,63 +20,61 @@
 
 <div class="untree_co-section">
 	<div class="container">
-		<?php foreach ($detail as $sem) : ?>
-			<div class="row justify-content-center mb-5">
-				<div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="0">
-					<h2 class="line-bottom text-center mb-4">Ekstrakulikuler</h2>
-				</div>
+		<div class="row justify-content-center mb-5">
+			<div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="0">
+				<h2 class="line-bottom text-center mb-4">Ekstrakulikuler</h2>
+			</div>
+		</div>
+
+		<div class="row align-items-center">
+			<div class="col-sm-6 col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="0">
+				<a href="#" class="category d-flex justify-content-center h-100">
+					<div class="text-center">
+						<img src="<?php echo base_url('assets/database/img/icon_eskul/football.png') ?>" alt="futsal" width="50" height="50">
+						<h3 class="mt-3">Futsal</h3>
+					</div>
+				</a>
 			</div>
 
-			<div class="row align-items-center">
-				<div class="col-sm-6 col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="0">
-					<a href="<?php echo base_url('ekstrakurikuler/detail/'. $sem->id_eskul) ?>" class="category d-flex justify-content-center h-100">
-						<div class="text-center">
-							<img src="<?php echo base_url('assets/database/img/icon_eskul/football.png') ?>" alt="futsal" width="50" height="50">
-							<h3 class="mt-3">Futsal</h3>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-sm-6 col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="0">
-					<a href="#" class="category d-flex justify-content-center h-100">
-						<div class="text-center">
-							<img src="<?php echo base_url('assets/database/img/icon_eskul/pencak-silat-1.png') ?>" alt="futsal" width="50" height="50">
-							<h3 class="mt-3">Pencak Silat</h3>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-sm-6 col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="0">
-					<a href="#" class="category d-flex justify-content-center h-100">
-						<div class="text-center">
-							<img src="<?php echo base_url('assets/database/img/icon_eskul/tent.png') ?>" alt="futsal" width="50" height="50">
-							<h3 class="mt-3">Pramuka</h3>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-sm-6 col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="0">
-					<a href="#" class="category d-flex justify-content-center h-100">
-						<div class="text-center">
-							<img src="<?php echo base_url('assets/database/img/icon_eskul/dance.png') ?>" alt="futsal" width="50" height="50">
-							<h3 class="mt-3">Tari</h3>
-						</div>
-					</a>
-				</div>
-			<?php endforeach; ?>
+			<div class="col-sm-6 col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="0">
+				<a href="#" class="category d-flex justify-content-center h-100">
+					<div class="text-center">
+						<img src="<?php echo base_url('assets/database/img/icon_eskul/pencak-silat-1.png') ?>" alt="futsal" width="50" height="50">
+						<h3 class="mt-3">Pencak Silat</h3>
+					</div>
+				</a>
 			</div>
 
-			<!-- <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="400">
+			<div class="col-sm-6 col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="0">
+				<a href="#" class="category d-flex justify-content-center h-100">
+					<div class="text-center">
+						<img src="<?php echo base_url('assets/database/img/icon_eskul/tent.png') ?>" alt="futsal" width="50" height="50">
+						<h3 class="mt-3">Pramuka</h3>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-sm-6 col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="0">
+				<a href="#" class="category d-flex justify-content-center h-100">
+					<div class="text-center">
+						<img src="<?php echo base_url('assets/database/img/icon_eskul/dance.png') ?>" alt="futsal" width="50" height="50">
+						<h3 class="mt-3">Tari</h3>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<!-- <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="400">
       <div class="col-lg-8 text-center">
         <p>We have more category here. <a href="#">Browse all</a></p>
       </div>
     </div> -->
-			<div class=" row justify-content-center mt-4">
-				<p data-aos="fade-up" data-aos-delay="200">
-					<!-- <a href="#" class="btn btn-primary mr-1">Admission</a> -->
-					<a href="<?php echo base_url('ekstrakurikuler/extra') ?>" class="btn btn-outline-primary">Tampilkan Semua</a>
-				</p>
-			</div>
+		<div class=" row justify-content-center mt-4">
+			<p data-aos="fade-up" data-aos-delay="200">
+				<!-- <a href="#" class="btn btn-primary mr-1">Admission</a> -->
+				<a href="<?php echo base_url('ekstrakurikuler/extra') ?>" class="btn btn-outline-primary">Tampilkan Semua</a>
+			</p>
+		</div>
 	</div>
 </div>
 
