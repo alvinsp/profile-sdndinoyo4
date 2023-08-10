@@ -36,21 +36,47 @@ class Set_hero extends CI_Controller
     }
 
     public function update()
-    {
-        $id_kalimat     = $this->input->post('id_kalimat');
-        $kalimat        = $this->input->post('kalimat');
-        $gambar         = $this->input->post('gambar');
+{
+    $id_kalimat = $this->input->post('id_kalimat');
+    $kalimat = $this->input->post('kalimat');
+    $gambar = $_FILES['gambar']['name'];
 
-        $data = array(
-            'kalimat' => $kalimat,
-            'gambar'  => $gambar
-        );
+    // Ambil data gambar sebelumnya berdasarkan ID kalimat
+    $gambar_sebelumnya = $this->set_hero_model->get_gambar_by_id($id_kalimat); // Ganti 'get_gambar_by_id' dengan method yang sesuai di model
 
-        $where = array(
-            'id_kalimat' => $id_kalimat
-        );
+    if ($gambar != '') {
+        $config['upload_path'] = './assets/database/img/';
+        $config['allowed_types'] = 'jpg|png';
 
-        $this->set_hero_model->update_hero($where, $data, 'set_hero');
-        redirect('database/set_hero/index');
+        $this->load->library('upload', $config);
+        if (!$this->upload->do_upload('gambar')) {
+            echo 'upload gagal';
+            die();
+        } else {
+            // Jika berhasil diunggah, update nama gambar baru ke dalam database
+            $gambar = $this->upload->data('file_name');
+
+            // Hapus gambar sebelumnya jika ada
+            if ($gambar_sebelumnya !== '' && file_exists('./assets/database/img/' . $gambar_sebelumnya)) {
+                unlink('./assets/database/img/' . $gambar_sebelumnya);
+            }
+        }
+    } else {
+        // Jika gambar tidak diunggah, gunakan gambar sebelumnya
+        $gambar = $gambar_sebelumnya;
     }
+
+    $data = array(
+        'kalimat' => $kalimat,
+        'gambar' => $gambar,
+    );
+
+    $where = array(
+        'id_kalimat' => $id_kalimat
+    );
+
+    $this->set_hero_model->update_hero($where, $data, 'set_hero');
+    redirect('database/set_hero/index');
+}
+
 }

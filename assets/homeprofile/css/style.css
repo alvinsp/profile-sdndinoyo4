@@ -933,17 +933,20 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
 
 .media-h {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   -webkit-box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
   background: #ffffff; }
   .media-h figure {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 170px;
-    flex: 0 0 170px;
+    -ms-flex: 0 0 200px;
+    flex: 0 0 200px;
     position: relative;
     margin-bottom: 0;
     overflow: hidden; }
@@ -959,7 +962,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
       transform: scale(1);
       -webkit-transition: .3s transform ease;
       -o-transition: .3s transform ease;
-      transition: .3s transform ease; }
+      transition: .3s transform ease;
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+      -moz-transition: .3s transform ease;
+      -ms-transition: .3s transform ease;
+}
   .media-h .media-h-body {
     padding: 20px; }
     .media-h .media-h-body h2 {
@@ -967,7 +975,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   .media-h:hover img {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
-    transform: scale(1.05); }
+    transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
 
 .btn-buat{
   text-decoration: none;
