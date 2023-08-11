@@ -90,6 +90,13 @@ class Set_eskul extends CI_Controller
 		redirect('database/set_eskul/index');
 	}
 
+	public function hapus($id_eskul)
+    {
+        $where = array('id_eskul' => $id_eskul);
+        $this->set_eskul_model->hapus_data($where, 'ekstrakulikuler');
+        redirect('database/set_eskul/index');
+    }
+
 
 
 

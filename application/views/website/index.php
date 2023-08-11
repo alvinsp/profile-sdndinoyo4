@@ -28,7 +28,7 @@
 
 		<div class="row align-items-center">
 			<div class="col-sm-6 col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="0">
-				<a href="#" class="category d-flex justify-content-center h-100">
+				<a href="<?php echo base_url('ekstrakurikuler/detail/') ?>" class="category d-flex justify-content-center h-100">
 					<div class="text-center">
 						<img src="<?php echo base_url('assets/database/img/icon_eskul/football.png') ?>" alt="futsal" width="50" height="50">
 						<h3 class="mt-3">Futsal</h3>
@@ -39,7 +39,7 @@
 			<div class="col-sm-6 col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="0">
 				<a href="#" class="category d-flex justify-content-center h-100">
 					<div class="text-center">
-						<img src="<?php echo base_url('assets/database/img/icon_eskul/pencak-silat-1.png') ?>" alt="futsal" width="50" height="50">
+						<img src="<?php echo base_url('assets/database/img/icon_eskul/pencak-silat.png') ?>" alt="futsal" width="50" height="50">
 						<h3 class="mt-3">Pencak Silat</h3>
 					</div>
 				</a>
@@ -80,56 +80,60 @@
 
 <div class="untree_co-section bg-light">
 	<div class="container">
-
 		<div class="row justify-content-center mb-5">
-			<div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="0">
+			<div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="0">
 				<h2 class="line-bottom text-center mb-4">Prestasi Terbaru</h2>
+				<p>"Teruslah melangkah meski itu pelan karena dengan melangkah akan menjadikan kita semakin dekat dengan tujuan dan prestasi yang diinginkan."</p>
 			</div>
 		</div>
-
-
 		<div class="row align-items-stretch">
-			<div class="col-lg-12 mb-3" data-aos="fade-up" data-aos-delay="100">
-				<div class="media-h d-flex h-100">
+			<div class="col-lg-12 mt-1" data-aos="fade-up" data-aos-delay="100">
+				<div class="media-j d-flex h-90">
 					<figure>
 						<img src="<?php echo base_url('assets/homeprofile/images') ?> /img-school-1-min.jpg" alt="Image">
 					</figure>
-					<div class="media-h-body">
+					<div class="media-j-body">
 						<h2 class="mb-3"><a href="#">Education for Tomorrow's Leaders</a></h2>
-						<div class="meta mb-2"><span class="icon-calendar mr-2"></span><span>June 22, 2020</span> <span class="icon-person mr-2"></span>Admin</div>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-							blind texts.</p>
-						<p><a href="#">Learn More</a></p>
+						<div class="meta mb-2"><span class="icon-calendar mr-2"></span><span>June 22, 2020</span> </div>
+						<div class="my-4">
+							<p class="icon-person"> : fdakslf</p>
+							<p class="icon-map"> : asdfkj</p>
+						</div>
+						<p><a href="">Learn More</a></p>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-lg-12 mb-3" data-aos="fade-up" data-aos-delay="200">
-				<div class="media-h d-flex h-100">
+			<div class="col-lg-12 mt-1" data-aos="fade-up" data-aos-delay="100">
+				<div class="media-j d-flex h-90">
 					<figure>
-						<img src="<?php echo base_url('assets/homeprofile/images') ?> /img-school-2-min.jpg" alt="Image">
+						<img src="<?php echo base_url('assets/homeprofile/images') ?> /img-school-1-min.jpg" alt="Image">
 					</figure>
-					<div class="media-h-body">
-						<h2 class="mb-3"><a href="#">Enroll Your Kids This Summer to get 30% off</a></h2>
-						<div class="meta mb-2"><span class="icon-calendar mr-2"></span><span>June 22, 2020</span> <span class="icon-person mr-2"></span>Admin</div>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-							blind texts.</p>
-						<p><a href="#">Learn More</a></p>
+					<div class="media-j-body">
+						<h2 class="mb-3"><a href="#">Education for Tomorrow's Leaders</a></h2>
+						<div class="meta mb-2"><span class="icon-calendar mr-2"></span><span>June 22, 2020</span> </div>
+						<div class="my-4">
+							<p class="icon-calendar"> : fdakslf</p>
+							<p class="icon-airplay"> : asdfkj</p>
+						</div>
+						<p><a href="">Learn More</a></p>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-lg-12 mb-3" data-aos="fade-up" data-aos-delay="200">
-				<div class="media-h d-flex h-100">
+			<div class="col-lg-12 mt-1" data-aos="fade-up" data-aos-delay="100">
+				<div class="media-j d-flex h-90">
 					<figure>
-						<img src="<?php echo base_url('assets/homeprofile/images') ?> /img-school-2-min.jpg" alt="Image">
+						<img src="<?php echo base_url('assets/homeprofile/images') ?> /img-school-1-min.jpg" alt="Image">
 					</figure>
-					<div class="media-h-body">
-						<h2 class="mb-3"><a href="#">Enroll Your Kids This Summer to get 30% off</a></h2>
-						<div class="meta mb-2"><span class="icon-calendar mr-2"></span><span>June 22, 2020</span> <span class="icon-person mr-2"></span>Admin</div>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-							blind texts.</p>
-						<p><a href="#">Learn More</a></p>
+					<div class="media-j-body">
+						<h2 class="mb-3"><a href="#">Education for Tomorrow's Leaders</a></h2>
+						<div class="meta mb-2"><span class="icon-calendar mr-2"></span><span>June 22, 2020</span> </div>
+						<div class="my-4">
+							<p class="icon-calendar"> : fdakslf</p>
+							<p class="icon-airplay"> : asdfkj</p>
+						</div>
+						<p><a href="">Learn More</a></p>
 					</div>
 				</div>
 			</div>
@@ -151,20 +155,18 @@
         <p data-aos="fade-up" data-aos-delay="100">sdn.dny04@gmail.com</p>
 
         <p>“Belajar Akan Membuatmu Selangkah Lebih Maju Menuju Kesuksesan"</p>
-
-        <!-- <p data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn btn-primary">Get Started</a></p> -->
+		<p data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn btn-primary">Get Started</a></p> -->
 
 <!-- </div>
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0">
         <figure class="img-wrap-2">
-          <img src="<?php echo base_url('assets/homeprofile/images') ?> /teacher-min.jpg" alt="Image" class="img-fluid">
+          <img src=/teacher-min.jpg" alt="Image" class="img-fluid">
           <div class="dotted"></div>
         </figure>
 
       </div>
     </div>
   </div> -->
-</div> -->
 
 <div class="untree_co-section bg-light">
 	<div class="container">
@@ -230,7 +232,7 @@
 	</div>
 </div>
 
-<!-- <div class="untree_co-section pt-0 bg-img overlay" style="background-image: url('<?php echo base_url('assets/homeprofile/images') ?> /img-school-1-min.jpg');">
+<!-- <div class="untree_co-section pt-0 bg-img overlay" style="background-image: url(' /img-school-1-min.jpg');">
   <div class="container">
     <div class="row align-items-center justify-content-center text-center">
       <div class="col-lg-7">

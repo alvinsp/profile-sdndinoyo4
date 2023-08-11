@@ -938,19 +938,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     -o-transform: translateX(-50%);
 }
 
-.media-h {
+.media-j {
   margin-bottom: 50px;
   -webkit-box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
   background: #ffffff; }
-  .media-h figure {
+  .media-j figure {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 200px;
-    flex: 0 0 200px;
+    -ms-flex: 0 0 300px;
+    flex: 0 0 300px;
     position: relative;
     margin-bottom: 0;
     overflow: hidden; }
-    .media-h figure img {
+    .media-j figure img {
       -o-object-fit: cover;
       object-fit: cover;
       position: absolute;
@@ -968,11 +968,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
       -moz-transition: .3s transform ease;
       -ms-transition: .3s transform ease;
 }
-  .media-h .media-h-body {
+  .media-j .media-j-body {
     padding: 20px; }
-    .media-h .media-h-body h2 {
+    .media-j .media-j-body h2 {
       font-size: 20px; }
-  .media-h:hover img {
+  .media-j:hover img {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);

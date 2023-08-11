@@ -10,6 +10,12 @@ class Set_eskul_model extends CI_Model
 	{
 		$this->db->insert('ekstrakulikuler', $data);
 	}
+
+	public function hapus_data($where, $table)
+	{
+		$this->db->where($where);
+		$this->db->delete($table);
+	}
 	public function edit_eskul($where, $table)
 	{
 		return $this->db->get_where($table, $where);

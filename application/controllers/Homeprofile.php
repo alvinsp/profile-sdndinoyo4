@@ -12,9 +12,12 @@ class Homeprofile extends CI_Controller
 	public function index()
 	{
 		// $this->load->library('../controllers/Ekstrakurikuler.php');
+		// $detail = $this->eskul_model->detail_data($id);
+		// $data['detail'] = $detail;
 		$data['kalimat'] = $this->index_home->tampil_kalimat()->result();
 		$this->load->view('template/website/header');
 		$this->load->view('website/index', $data);
+		// $this->load->view('website/eskul', $data);
 		$this->load->view('template/website/footer');
 	}
 

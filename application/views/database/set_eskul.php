@@ -1,26 +1,31 @@
 <div class="container-fluid">
-	<h4><b>SETTING ESKUL</b></h4>
-	<button class="btn btn-primary mb-4" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus"></i> Tambah Data Ekstrakulikuler</button>
-	<table class="table table-bordered">
-		<tr>
-			<th>Nama Eskul</th>
-			<th>Icon Eskul</th>
-			<th>Deskripsi Eskul</th>
-			<th>Foto Kegiatan</th>
-			<th colspan="2">Aksi</th>
-		</tr>
-
-		<?php foreach ($set_eskul_model as $sem) : ?>
-			<tr>
-				<td><?php echo $sem->nama_eskul ?></td>
-				<td><img src="<?php echo base_url('assets/database/img/icon_eskul/' . $sem->icon_eskul) ?>" alt="<?php echo $sem->nama_eskul ?>" width="20" height="20"></td>
-				<td><?php echo $sem->deskripsi_eskul ?></td>
-				<td><img src="<?php echo base_url('assets/database/img/foto_kegiatan_eskul/' . $sem->foto_kegiatan) ?>" alt="<?php echo $sem->nama_eskul ?>" width="80" height="80"></td>
-				<td>
-					<?php echo anchor('database/set_eskul/edit/' . $sem->id_eskul, '<div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div>') ?>
-				</td>
-			<?php endforeach; ?>
+	<h4><b>SETTING EKSTRAKURIKULER</b></h4>
+	<button class="mt-2 btn btn-primary mb-4" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus"></i> Tambah Data Ekstrakulikuler</button>
+	<table id="myTable" class="display table table-bordered">
+		<thead>
+			<tr class="thead-dark">
+				<th>Nama</th>
+				<th>Icon</th>
+				<th>Deskripsi</th>
+				<th>Foto Kegiatan</th>
+				<th colspan="2">Aksi</th>
 			</tr>
+		</thead>
+
+		<tbody>
+			<?php foreach ($set_eskul_model as $sem) : ?>
+				<tr>
+					<td><?php echo $sem->nama_eskul ?></td>
+					<td><img src="<?php echo base_url('assets/database/img/icon_eskul/' . $sem->icon_eskul) ?>" alt="<?php echo $sem->nama_eskul ?>" width="20" height="20"></td>
+					<td><?php echo $sem->deskripsi_eskul ?></td>
+					<td><img src="<?php echo base_url('assets/database/img/foto_kegiatan_eskul/' . $sem->foto_kegiatan) ?>" alt="<?php echo $sem->nama_eskul ?>" width="80" height="80"></td>
+					<td><?php echo anchor('database/set_eskul/hapus/' . $sem->id_eskul, '<div class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></div>') ?></td>
+					<td>
+						<?php echo anchor('database/set_eskul/edit/' . $sem->id_eskul, '<div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div>') ?>
+					</td>
+				<?php endforeach; ?>
+				</tr>
+		</tbody>
 
 	</table>
 
@@ -59,4 +64,4 @@
 			</div>
 		</div>
 	</div>
-</div> -->
+</div>

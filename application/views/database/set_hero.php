@@ -1,7 +1,7 @@
 <div class="container-fluid">
 	<table class="table table-bordered">
 		<h4><b>SETTING HERO</b></h4>
-		<tr>
+		<tr class="thead-dark">
 			<th>Kalimat</th>
 			<th colspan="2">Gambar Background</th>
 			<th>Aksi</th>
